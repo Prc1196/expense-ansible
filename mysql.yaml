@@ -7,17 +7,13 @@
       name: mysql-server
       state: installed
 
-  # - name: start and enable mysql server
-  #   ansible.builtin.server:
-  #     name: mysqld
-  #     state: started
-  #     enabled: yes
-
   - name: start and enable mysql server
     ansible.builtin.service:
-    name: mysql
-    state: started
-    enabled: true
+      name: mysqld
+      state: started
+      enabled: yes
+      
+  
 
   # - name: connect to mysql server
     
