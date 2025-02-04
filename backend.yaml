@@ -70,11 +70,11 @@
       login_host: mysql.prcdaws82s.online
       target: /app/schema/backend.sql
 
-  - name: deamon reload and restart the service
+  - name: daemon reload and restart service
     ansible.builtin.systemd_service:
       enable: true
       state: restarted
-      deamon_reload: true
+      daemon_reload: true
       name: backend
     
 
