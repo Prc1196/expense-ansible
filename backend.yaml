@@ -52,7 +52,7 @@
       login_user: root
       login_password: ExpenceApp@1
       login_host: mysql.prcdaws82s.online
-       target: /app/schema/backend.sql
+      target: /app/schema/backend.sql
 
 
 
